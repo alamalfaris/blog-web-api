@@ -15,12 +15,12 @@ namespace blog_web_api.Database
             _connectionDb = connectionDb.Value;
         }
 
-        public string GetConnectionString()
+        public virtual string GetConnectionString()
         {
             return $"Server={_connectionDb.Host};Port={_connectionDb.Port};Database={_connectionDb.Database};User Id={_connectionDb.Username};Password={_connectionDb.Hash};";
         }
 
-        public IDbConnection GetConnection()
+        public virtual IDbConnection GetConnection()
         {
             return new NpgsqlConnection(GetConnectionString());
         }

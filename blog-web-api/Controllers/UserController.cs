@@ -1,6 +1,5 @@
 ﻿using Asp.Versioning;
 using blog_web_api.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace blog_web_api.Controllers
